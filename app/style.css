@@ -1,0 +1,154 @@
+/* Existing styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #6ea9df;
+    box-shadow: 0 0 15px rgba(95, 169, 218, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#ingredients-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#recipes-container {
+    margin-top: 20px;
+}
+
+.recipe {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #77ffa0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.recipe:hover {
+    transform: scale(1.02);
+}
+
+.recipe-info {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+}
+
+.recipe-actions {
+    text-align: right;
+}
+
+#favorites-container {
+    margin-top: 30px;
+}
+
+#favorites-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.favorite-recipe {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.favorite-recipe:hover {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #ingredients-input {
+        width: 70%;
+    }
+
+    #search-button {
+        width: auto;
+        max-width: none;
+    }
+
+    .recipe-info {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Favorites button styling */
+#toggle-favorites-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ff6f61;
+    transition: color 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+#toggle-favorites-button:hover {
+    color: #ff3d3d;
+    transform: scale(1.1);
+}
+
+.heart-icon {
+    display: inline-block;
+    line-height: 50px; /* Center the heart vertically */
+}
+ 

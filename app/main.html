@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Calorie Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+            <h1>Recipe Calorie Finder</h1>
+            <div class="input-field">
+                <input type="text" id="ingredients-input" placeholder="Enter ingredients (comma separated)">
+                <button id="search-button">Search Calories</button>
+            </div>
+            <div id="recipes-container"></div>
+            <div id="favorites-container" class="hidden">
+                <h2>Favorite Recipes</h2>
+                <ul id="favorites-list"></ul>
+            </div>
+        </div>
+        <button id="toggle-favorites-button" title="Show Favorites">
+            <span class="heart-icon">❤️</span>
+        </button>
+    <script src="script.js"></script>
+</body>
+</html>
